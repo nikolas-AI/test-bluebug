@@ -96,11 +96,9 @@ nav a:hover {
 
 .container p{
     text-align: justify;
-    margin: 20px;
+    margin: auto;
+    margin-top: 20px;
     width: 70%;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
 span {
