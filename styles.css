@@ -87,7 +87,7 @@ nav a:hover {
 }
 
 .container {
-    margin: 20px auto;
+    margin: 20px;
     padding: 20px;
     text-align: center;
     background-color: #fff;
@@ -96,10 +96,13 @@ nav a:hover {
 }
 
 .container p{
-    text-align: left;
+    text-align: justify;
     margin: 20px;
+    width: 70%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
-
 
 span {
     font-size: 20px;
