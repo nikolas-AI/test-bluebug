@@ -78,7 +78,7 @@ nav a:hover {
 }
 
 #home, #about, #events, #contact {
-    height: 100vh;
+    min-height: 100vh;
     width: 90%;
 }
 
@@ -100,28 +100,20 @@ nav a:hover {
     margin: 20px;
 }
 
-h1 {
-    font-size: 50px;
-}
+
 span {
     font-size: 20px;
-}
-
-h2 {
-    font-size: 28px;
-    color: #ffffff;
-}
-
-h3 {
-    font-size: 20px;
-    color: #104892;
-    padding: 5px;
 }
 
 p {
     font-size: 18px;
     line-height: 1.5;
     color: #ffffff;
+}
+
+.carousel-inner img{
+    padding: 10px;
+    margin: auto;
 }
 
 .social-links img {
@@ -142,6 +134,15 @@ p {
 
 #contact{
     background: linear-gradient(240deg, rgba(11,6,99,0.8968837535014006) 4%, rgba(16,16,172,0.7904411764705882) 20%, rgba(12,123,181,0.7988445378151261) 78%, rgba(5,213,255,0.7232142857142857) 99%);
+}
+
+#contact p a {
+    text-decoration: none;
+    color: rgb(13, 254, 58);
+}
+
+#contact p a:hover {
+    color: rgb(248, 239, 0);
 }
 
 .social-links{
