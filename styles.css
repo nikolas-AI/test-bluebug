@@ -19,7 +19,7 @@ body {
 main{
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 45px;
 }
 
 #header {
@@ -27,7 +27,8 @@ main{
     top: 0px;
     width: 100%;
     z-index: 2;
-    background: linear-gradient(40deg, rgb(11,6,99) 4%, rgb(16,16,172) 20%, rgb(12,123,181) 78%, rgb(5,213,255) 99%);
+    background-color: rgb(0, 169, 172);
+    /* background: linear-gradient(40deg, rgb(11,6,99) 4%, rgb(16,16,172) 20%, rgb(12,123,181) 78%, rgb(5,213,255) 99%); */
     color: #fff;
     text-align: center;
     padding: 0;
@@ -40,7 +41,7 @@ nav {
 }
 nav ul {
     list-style: none;
-    padding: 0;
+    padding-top: 5px;
     display: flex;
     align-items: center;
 }
@@ -112,6 +113,15 @@ p {
     color: #ffffff;
 }
 
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.carousel-item img {
+    width: 35%;
+}
+
 .carousel-inner img{
     padding: 10px;
     margin: auto;
@@ -137,6 +147,10 @@ p {
     background: linear-gradient(240deg, rgba(11,6,99,0.8968837535014006) 4%, rgba(16,16,172,0.7904411764705882) 20%, rgba(12,123,181,0.7988445378151261) 78%, rgba(5,213,255,0.7232142857142857) 99%);
 }
 
+#contact p {
+    text-align: center;
+}
+
 #contact p a {
     text-decoration: none;
     color: rgb(13, 254, 58);
@@ -156,7 +170,7 @@ p {
 }
 
 footer {
-    background-color: #006efe;
+    background-color: rgb(0, 169, 172);
     color: #fff;
     text-align: center;
     padding: 10px;
