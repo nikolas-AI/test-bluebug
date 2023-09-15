@@ -118,7 +118,7 @@ p {
 }
 
 .social-links img {
-    height: 30px;
+    height: 50px;
 }
 
 #home {
@@ -151,6 +151,7 @@ p {
     justify-content: space-around;
     width: 40%;
     margin: auto;
+    margin-top: 100px;
     padding: 10px 0;
 }
 
