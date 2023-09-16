@@ -1,58 +1,73 @@
 (function () {
     'use strict';
 
-    let counter = 1;
+$(document).ready(function () {
+    // Function to highlight the active navigation link when a section enters the viewport
+    function highlightActiveNav(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const targetId = entry.target.id;
+                const linkSelector = `a[href="#${targetId}"]`;
 
-    function contentRotator() {
-        $(`#quotes p:nth-child(${counter})`).fadeIn(3000, function () {
-            if ($(this).is('#quotes p:last-child')) {
-                setTimeout(function () {
-                    $(`#quotes p:nth-child(${counter})`).fadeOut(1000, function () {
-                        counter = 1;
-                        contentRotator();
-                    })
-                }, 1000)
-            }
-            else {
-                setTimeout(function () {
-                    $(`#quotes p:nth-child(${counter})`).fadeOut(1000, function () {
-                        counter++;
-                        contentRotator();
-                    })
-                }, 1000)
+                // Remove 'active' class from all links
+                $('nav ul li a').removeClass('active');
 
+                // Add 'active' class to the link corresponding to the current section
+                $(linkSelector).addClass('active');
             }
         });
     }
 
-    contentRotator();
+    // Define the sections to observe
+    const sections = document.querySelectorAll('section');
+    const sectionObserver = new IntersectionObserver(highlightActiveNav, {
+        root: null, // Viewport
+        rootMargin: '0px', // Margin around the viewport
+        threshold: 0.5, // 50% of the section is visible
+    });
 
+    // Observe all sections
+    sections.forEach(section => {
+        sectionObserver.observe(section);
+    });
 
-    // $(document).ready(function () {
-        // $("ul > li > a").mouseenter(
-        //     function (e) {
-        //         $(this).css("color", "Black");
-        //         $(this).css("background-color", "White");
-        //     }
-        // )
+    // Add 'active' class to the "Home" link on page load
+    $('nav ul li a[href="#home"]').addClass('active');
 
-        // $("ul > li > a").mouseleave(
-        //     function (e) {
-        //         $(this).css("color", "White");
-        //         $(this).css("background-color", "rgba(255, 255, 255, 0)");
-        //     }
-        // )
+    // Handle click event on navigation links (if you want to keep the highlight when clicked)
+    $('nav ul li a').click(function () {
+        // Remove 'active' class from all links
+        $('nav ul li a').removeClass('active');
 
-    //     $("ul > li > a").click(
-    //         function (e) {
-    //             $("ul > li > a").css("color", "White");                    
-    //             $("ul > li > a").css("background-color", "rgba(255, 255, 255, 0)");                    
+        // Add 'active' class to the clicked link
+        $(this).addClass('active');
+    });
+});
 
-    //             $(this).css("color", "Black");
-    //             $(this).css("background-color", "White");
-    //         });
-    // });
+let counter = 1;
 
+function contentRotator() {
+    $(`#quotes p:nth-child(${counter})`).fadeIn(3000, function () {
+        if ($(this).is('#quotes p:last-child')) {
+            setTimeout(function () {
+                $(`#quotes p:nth-child(${counter})`).fadeOut(1000, function () {
+                    counter = 1;
+                    contentRotator();
+                })
+            }, 1000)
+        }
+        else {
+            setTimeout(function () {
+                $(`#quotes p:nth-child(${counter})`).fadeOut(1000, function () {
+                    counter++;
+                    contentRotator();
+                })
+            }, 1000)
 
+        }
+    });
+}
+
+contentRotator();
 
 })();
