@@ -68,9 +68,9 @@ nav ul > li > a:hover {
     background-color: rgb(253, 253, 253);
 }
 
-nav > li > a:active {
+nav ul > li > a:active {
     color: rgb(0, 177, 59);
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -80,7 +80,7 @@ nav > li > a:active {
 .logo img {
     height: 50px;
     border-radius: 10px;
-    box-shadow: 4px 3px 2px 2px rgb(33, 32, 32);
+    box-shadow: 2px 2px 2px 2px rgb(33, 32, 32);
 }
 
 #home, #about, #events, #contact {
@@ -194,4 +194,15 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
+}
+/* Define styles for the 'active' class */
+nav ul li a.active {
+    color: black;
+    background-color: white;
+}
+
+/* Define styles for the 'active' class */
+nav ul li a.active {
+    color: black;
+    background-color: white;
 }
