@@ -52,7 +52,7 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav a {
+nav ul > li > a {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
@@ -62,9 +62,14 @@ nav a {
     transition: all .3s;
 }
 
-nav a:hover {
+nav ul > li > a:hover {
     color: #252422;
     font-size: 25px;
+    background-color: rgb(253, 253, 253);
+}
+
+nav > li > a:active {
+    color: rgb(0, 177, 59);
     background-color: rgb(253, 253, 253);
 }
 
@@ -120,7 +125,8 @@ p {
     justify-content: space-around;
 }
 .carousel-item img {
-    width: 30%;
+    width: 70%;
+    border-radius: 30px;
 }
 
 .carousel-inner img{
@@ -142,6 +148,7 @@ p {
 
 #events{
     background: linear-gradient(40deg, rgba(11,6,99,0.8968837535014006) 4%, rgba(16,16,172,0.7904411764705882) 20%, rgba(12,123,181,0.7988445378151261) 78%, rgba(5,213,255,0.7232142857142857) 99%);
+    padding-bottom: 50px;
 }
 
 #contact{
@@ -175,7 +182,7 @@ p {
     margin: 20px auto;
     padding: 20px;
     border: 2px solid rgb(255, 255, 255);
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 #quotes p { display: none;}
