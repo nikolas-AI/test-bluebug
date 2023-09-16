@@ -1,19 +1,30 @@
-const sliderContainer = document.querySelector('.slider-container');
-const slides = document.querySelectorAll('.slide');
-let slideIndex = 0;
+(function() {
+    'use strict';
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${100 * (i - index)}%)`;
-    });
-}
+    let counter = 1;
 
-function nextSlide() {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
-}
+    function contentRotator() {
+        $(`#quotes p:nth-child(${counter})`).fadeIn(3000, function() {
+            if ($(this).is('#quotes p:last-child')){
+                setTimeout(function(){
+                    $(`#quotes p:nth-child(${counter})`).fadeOut(1000, function() {
+                        counter = 1;
+                        contentRotator();
+                    })
+                },1000)
+            }
+            else{
+                setTimeout(function(){
+                    $(`#quotes p:nth-child(${counter})`).fadeOut(1000, function() {
+                        counter++;
+                        contentRotator();
+                    })
+                },1000)
+                
+            }
+        });
+    }
 
-setInterval(nextSlide, 5000); // Auto slide every 5 seconds
+    contentRotator();
 
-// Initial slide display
-showSlide(slideIndex);
+})();
