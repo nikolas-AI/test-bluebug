@@ -217,7 +217,8 @@ nav ul li a.active {
     object-fit: cover;
     z-index: 4;
     animation: openingAnimationVideo 5s;
-    border: 2px solid red;
+    border: 2px solid rgb(86, 84, 84);
+    border-radius: 50px;
     visibility: hidden;
     
 }
