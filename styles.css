@@ -214,6 +214,7 @@ nav ul li a.active {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 500px;
+    width: 340px;
     object-fit: cover;
     z-index: 4;
     animation: openingAnimationVideo 5s;
