@@ -27,6 +27,7 @@ We welcome contributions to improve Bluebug's website. If you'd like to contribu
 
 6. **Push to Your Fork**: Push your changes to your forked repository on GitHub.
 
+7. **Create a Pull Request**: In this repository, click on the "Pull Requests" tab, then click the "New Pull Request" button. Select your branch and provide a clear title and description for your pull request. Be sure to reference any related issues if applicable.
 
 
 
