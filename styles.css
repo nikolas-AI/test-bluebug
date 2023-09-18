@@ -16,6 +16,66 @@ body {
     background-color: #f0f0f0;
     animation: HTML 4.5s;
 }
+/* Define styles for the 'active' class */
+nav ul li a.active {
+    color: black;
+    background-color: white;
+}
+
+#doc {
+    animation: openingAnimationDoc 5s;
+    display: block;
+}
+
+#animation video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 400px;
+    object-fit: contain;
+    z-index: 4;
+    animation: openingAnimationVideo 5s;
+    /* border: 2px solid rgb(86, 84, 84); */
+    border-radius: 50px;
+    visibility: hidden;
+}
+
+@keyframes openingAnimationDoc {
+    0% { 
+        display: none; 
+    }
+    100% { 
+        display: none; 
+    }    
+}
+
+@keyframes openingAnimationVideo {
+    0% { visibility: visible; }
+    
+    100% { visibility: visible; }  
+}
+
+@keyframes HTML {
+    0% {
+        height: 100vh;
+        overflow: hidden; 
+    }
+    50% {
+        height: 100vh; 
+        overflow: hidden;
+    }
+    90% {
+        height: 100vh; 
+        overflow: hidden;
+    }
+    100% {
+        height: 100vh; 
+        overflow: hidden;
+    }
+    
+}
 
 #body{
     display: flex;
@@ -195,66 +255,4 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
-}
-/* Define styles for the 'active' class */
-nav ul li a.active {
-    color: black;
-    background-color: white;
-}
-
-#doc {
-    animation: openingAnimationDoc 5s;
-    display: block;
-}
-
-
-#animation video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 500px;
-    width: 340px;
-    object-fit: cover;
-    z-index: 4;
-    animation: openingAnimationVideo 5s;
-    border: 2px solid rgb(86, 84, 84);
-    border-radius: 50px;
-    visibility: hidden;
-    
-}
-
-@keyframes openingAnimationDoc {
-    0% { 
-        display: none; 
-    }
-    100% { 
-        display: none; 
-    }    
-}
-
-@keyframes openingAnimationVideo {
-    0% { visibility: visible; }
-    
-    100% { visibility: visible; }  
-}
-
-@keyframes HTML {
-    0% {
-        height: 100vh;
-        overflow: hidden; 
-    }
-    50% {
-        height: 100vh; 
-        overflow: hidden;
-    }
-    90% {
-        height: 100vh; 
-        overflow: hidden;
-    }
-    100% {
-        height: 100vh; 
-        overflow: hidden;
-    }
-    
 }
