@@ -41,8 +41,15 @@ If you encounter any issues or bugs while testing the website, please report the
 
 1. **Clear Description**: Provide a clear and concise description of the issue you're facing. Include relevant details such as the web browser and version you are using.
 
+2. **Steps to Reproduce**: Clearly outline the steps required to reproduce the issue. The more specific you can be, the easier it will be for us to identify and fix the problem.
 
+3. **Screenshots**: If applicable, include screenshots that illustrate the issue. This can be especially helpful for visual problems or layout issues.
 
+4. **Expected vs. Actual Behavior**: Describe what you expected to happen and what actually occurred. This contrast can be very informative.
+
+5. **System Information**: Include information about your operating system and any other relevant software versions (e.g., Node.js, npm, or specific libraries) that might be affecting the website.
+
+We appreciate your help in improving Bluebug's website by reporting any issues or bugs you encounter. Your feedback is valuable in ensuring the quality and reliability of the website.
 
 
 
