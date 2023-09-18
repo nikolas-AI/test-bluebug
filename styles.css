@@ -253,14 +253,27 @@ p {
 
 }
 
+.imgContainer {
+    position: relative;
+}
 
-#aboutImg img {
+#aboutImg1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    margin-right: 100px;
+    transform: rotate(10deg);
+}
+
+#aboutImg2 img {
     height: 500px;
     border-radius: 30px;
     box-shadow: 2px 2px 2px 2px black;
     margin-right: 100px;
 }
-
 
 
 #events {
