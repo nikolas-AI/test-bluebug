@@ -33,6 +33,11 @@ We welcome contributions to improve Bluebug's website. If you'd like to contribu
 
 9. **Merge**: Once your pull request is approved, it will be merged into the main repository.
 
+By following these guidelines, you can help improve Bluebug's website and contribute to its development. Thank you for your contributions!
+
+## Issues and Bug Reports
+
+
 
 
 
