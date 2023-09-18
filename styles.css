@@ -17,12 +17,6 @@ body {
     animation: HTML 4.5s;
 }
 
-/* Define styles for the 'active' class */
-nav ul li a.active {
-    color: black;
-    background-color: white;
-}
-
 #doc {
     animation: openingAnimationDoc 4s ease-out; 
     display: block; 
@@ -122,6 +116,12 @@ nav ul li a.active {
     text-align: center;
     padding: 0;
     border-radius: 0 0 10px 10px;
+}
+
+/* Define styles for the 'active' class */
+nav ul li a.active {
+    color: black;
+    background-color: white;
 }
 
 nav {
