@@ -23,6 +23,9 @@ We welcome contributions to improve Bluebug's website. If you'd like to contribu
 
 4. **Testing**: Test your changes thoroughly to ensure they don't introduce new issues and that they work as intended.
 
+5. **Commit Changes**: Commit your changes with descriptive commit messages that explain what your changes address. Use the present tense and be concise, e.g., "Add feature XYZ" or "Fix issue #123."
+
+6. **Push to Your Fork**: Push your changes to your forked repository on GitHub.
 
 
 
