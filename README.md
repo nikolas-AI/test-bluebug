@@ -37,6 +37,7 @@ By following these guidelines, you can help improve Bluebug's website and contri
 
 ## Issues and Bug Reports
 
+If you encounter any issues or bugs while testing the website, please report them by opening an issue in this repository. To help us address the problem effectively, please follow these guidelines when submitting an issue:
 
 
 
