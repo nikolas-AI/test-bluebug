@@ -31,6 +31,8 @@ We welcome contributions to improve Bluebug's website. If you'd like to contribu
 
 8. **Review and Discussion**: Your pull request will be reviewed, and there may be feedback or discussion about the changes. Please be responsive to any comments and make additional changes if necessary.
 
+9. **Merge**: Once your pull request is approved, it will be merged into the main repository.
+
 
 
 
