@@ -38,8 +38,8 @@ nav ul li a.active {
     object-fit: contain;
     z-index: 4;
     animation: openingAnimationVideo 4s linear;
-    /* border: 2px solid rgb(86, 84, 84); */
-    /* border-radius: 50px; */
+    /* border: 2px solid rgb(86, 84, 84);
+    border-radius: 50px; */
     
     visibility: hidden;
 }
