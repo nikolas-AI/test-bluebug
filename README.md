@@ -11,6 +11,11 @@ The repository is structured as follows:
 - `js/`: The JavaScript files for adding functionality to the website.
 - `Media/`: All images and graphics used on the website are stored here.
 
+## Contributing
+
+We welcome contributions to improve Bluebug's website. If you'd like to contribute, please follow these guidelines:
+
+
 
 
 
