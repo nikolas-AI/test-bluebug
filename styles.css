@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    /* animation: HTML 4.5s; */
+    animation: HTML 4.5s;
 }
 
 /* Define styles for the 'active' class */
