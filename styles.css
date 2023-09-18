@@ -23,10 +23,10 @@ nav ul li a.active {
     background-color: white;
 }
 
-/* #doc {
+#doc {
     animation: openingAnimationDoc 4s ease-out; 
     display: block; 
-} */
+}
 
 #animation img {
     position: absolute;
