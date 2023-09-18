@@ -15,6 +15,10 @@ The repository is structured as follows:
 
 We welcome contributions to improve Bluebug's website. If you'd like to contribute, please follow these guidelines:
 
+1. **Fork the Repository**: Click the "Fork" button on the top right corner of this repository's page to create your own copy of the repository.
+
+2. **Create a New Branch**: Create a new branch in your forked repository for your feature or bug fix. Naming your branch descriptively is a good practice, e.g., `feature-name` or `bugfix-issue-number`.
+
 
 
 
