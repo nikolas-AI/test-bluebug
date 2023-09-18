@@ -19,6 +19,10 @@ We welcome contributions to improve Bluebug's website. If you'd like to contribu
 
 2. **Create a New Branch**: Create a new branch in your forked repository for your feature or bug fix. Naming your branch descriptively is a good practice, e.g., `feature-name` or `bugfix-issue-number`.
 
+3. **Make Changes**: Make your changes and ensure that they adhere to coding standards and best practices.
+
+4. **Testing**: Test your changes thoroughly to ensure they don't introduce new issues and that they work as intended.
+
 
 
 
