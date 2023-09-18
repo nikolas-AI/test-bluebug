@@ -4,6 +4,13 @@ Welcome to the test repository for Bluebug's website. This repository is intende
 
 ## Repository Structure
 
+The repository is structured as follows:
+
+- `index.html`: The main HTML file for Bluebug's website.
+- `css/`: This directory contains all the CSS stylesheets used for styling the website.
+- `js/`: The JavaScript files for adding functionality to the website.
+- `Media/`: All images and graphics used on the website are stored here.
+
 
 
 
