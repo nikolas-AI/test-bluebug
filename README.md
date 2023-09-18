@@ -39,6 +39,7 @@ By following these guidelines, you can help improve Bluebug's website and contri
 
 If you encounter any issues or bugs while testing the website, please report them by opening an issue in this repository. To help us address the problem effectively, please follow these guidelines when submitting an issue:
 
+1. **Clear Description**: Provide a clear and concise description of the issue you're facing. Include relevant details such as the web browser and version you are using.
 
 
 
