@@ -127,7 +127,7 @@ nav {
 
 nav ul {
     list-style: none;
-    margin-top: 5px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
