@@ -29,6 +29,8 @@ We welcome contributions to improve Bluebug's website. If you'd like to contribu
 
 7. **Create a Pull Request**: In this repository, click on the "Pull Requests" tab, then click the "New Pull Request" button. Select your branch and provide a clear title and description for your pull request. Be sure to reference any related issues if applicable.
 
+8. **Review and Discussion**: Your pull request will be reviewed, and there may be feedback or discussion about the changes. Please be responsive to any comments and make additional changes if necessary.
+
 
 
 
