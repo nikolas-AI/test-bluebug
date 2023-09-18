@@ -6,7 +6,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 body {
@@ -16,6 +16,7 @@ body {
     background-color: #f0f0f0;
     animation: HTML 4.5s;
 }
+
 /* Define styles for the 'active' class */
 nav ul li a.active {
     color: black;
@@ -23,11 +24,11 @@ nav ul li a.active {
 }
 
 #doc {
-    animation: openingAnimationDoc 5s;
+    animation: openingAnimationDoc 4s ease-out;
     display: block;
 }
 
-#animation video{
+#animation img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -36,48 +37,74 @@ nav ul li a.active {
     width: 400px;
     object-fit: contain;
     z-index: 4;
-    animation: openingAnimationVideo 5s;
+    animation: openingAnimationVideo 4s linear;
     /* border: 2px solid rgb(86, 84, 84); */
-    border-radius: 50px;
+    /* border-radius: 50px; */
+    
     visibility: hidden;
 }
 
 @keyframes openingAnimationDoc {
-    0% { 
-        display: none; 
+    0% {
+        display: none;
     }
-    100% { 
-        display: none; 
-    }    
+
+    100% {
+        display: none;
+    }
 }
 
 @keyframes openingAnimationVideo {
-    0% { visibility: visible; }
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 600px;
+        width: 400px;
+        visibility: visible;
+    }
+    90% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 600px;
+        width: 400px;
+        visibility: visible;
+    }
+    100% {
+        top: 40px;
+        left: 30px;
+        /* height: 90px; */
+        width: 60px;
+        visibility: visible;
+    }
     
-    100% { visibility: visible; }  
 }
 
 @keyframes HTML {
     0% {
         height: 100vh;
-        overflow: hidden; 
+        overflow: hidden;
     }
+
     50% {
-        height: 100vh; 
+        height: 100vh;
         overflow: hidden;
     }
+
     90% {
-        height: 100vh; 
+        height: 100vh;
         overflow: hidden;
     }
+
     100% {
-        height: 100vh; 
+        height: 100vh;
         overflow: hidden;
     }
-    
 }
 
-#body{
+
+#body {
     display: flex;
     flex-direction: column;
     margin-top: 45px;
@@ -101,6 +128,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
 nav ul {
     list-style: none;
     margin-top: 5px;
@@ -113,43 +141,48 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul > li > a {
+nav ul>li>a {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
     font-size: 25px;
     padding: 0 7px 5px 7px;
     border-radius: 15px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
-nav ul > li > a:hover {
+nav ul>li>a:hover {
     color: #252422;
     font-size: 25px;
     background-color: rgb(253, 253, 253);
 }
 
-nav ul > li > a:active {
+nav ul>li>a:active {
     color: rgb(0, 177, 59);
     background-color: rgb(255, 255, 255);
 }
 
-
 .logo {
     margin-left: 3px;
 }
+
 .logo img {
     height: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgb(33, 32, 32);
 }
 
-#home, #about, #events, #contact {
+#home,
+#about,
+#events,
+#contact {
     min-height: 100vh;
     width: 90%;
 }
 
-#about, #events, #contact {
+#about,
+#events,
+#contact {
     padding-top: 80px;
 }
 
@@ -162,7 +195,7 @@ nav ul > li > a:active {
     border-radius: 10px;
 }
 
-.container p{
+.container p {
     text-align: justify;
     margin: auto;
     margin-top: 20px;
@@ -185,12 +218,13 @@ p {
     flex-direction: column;
     justify-content: space-around;
 }
+
 .carousel-item img {
     width: 70%;
     border-radius: 30px;
 }
 
-.carousel-inner img{
+.carousel-inner img {
     padding: 10px;
     margin: auto;
 }
@@ -200,20 +234,36 @@ p {
 }
 
 #home {
-    background: linear-gradient(40deg, rgba(11,6,99,0.8968837535014006) 4%, rgba(16,16,172,0.7904411764705882) 20%, rgba(12,123,181,0.7988445378151261) 78%, rgba(5,213,255,0.7232142857142857) 99%);
+    background: linear-gradient(40deg,
+            rgba(11, 6, 99, 0.8968837535014006) 4%,
+            rgba(16, 16, 172, 0.7904411764705882) 20%,
+            rgba(12, 123, 181, 0.7988445378151261) 78%,
+            rgba(5, 213, 255, 0.7232142857142857) 99%);
 }
 
-#about{
-    background: linear-gradient(240deg, rgba(11,6,99,0.8968837535014006) 4%, rgba(16,16,172,0.7904411764705882) 20%, rgba(12,123,181,0.7988445378151261) 78%, rgba(5,213,255,0.7232142857142857) 99%);
+#about {
+    background: linear-gradient(240deg,
+            rgba(11, 6, 99, 0.8968837535014006) 4%,
+            rgba(16, 16, 172, 0.7904411764705882) 20%,
+            rgba(12, 123, 181, 0.7988445378151261) 78%,
+            rgba(5, 213, 255, 0.7232142857142857) 99%);
 }
 
-#events{
-    background: linear-gradient(40deg, rgba(11,6,99,0.8968837535014006) 4%, rgba(16,16,172,0.7904411764705882) 20%, rgba(12,123,181,0.7988445378151261) 78%, rgba(5,213,255,0.7232142857142857) 99%);
+#events {
+    background: linear-gradient(40deg,
+            rgba(11, 6, 99, 0.8968837535014006) 4%,
+            rgba(16, 16, 172, 0.7904411764705882) 20%,
+            rgba(12, 123, 181, 0.7988445378151261) 78%,
+            rgba(5, 213, 255, 0.7232142857142857) 99%);
     padding-bottom: 50px;
 }
 
-#contact{
-    background: linear-gradient(240deg, rgba(11,6,99,0.8968837535014006) 4%, rgba(16,16,172,0.7904411764705882) 20%, rgba(12,123,181,0.7988445378151261) 78%, rgba(5,213,255,0.7232142857142857) 99%);
+#contact {
+    background: linear-gradient(240deg,
+            rgba(11, 6, 99, 0.8968837535014006) 4%,
+            rgba(16, 16, 172, 0.7904411764705882) 20%,
+            rgba(12, 123, 181, 0.7988445378151261) 78%,
+            rgba(5, 213, 255, 0.7232142857142857) 99%);
 }
 
 #contact p {
@@ -229,7 +279,7 @@ p {
     color: rgb(248, 239, 0);
 }
 
-.social-links{
+.social-links {
     display: flex;
     justify-content: space-around;
     width: 40%;
@@ -246,7 +296,9 @@ p {
     border-radius: 50px;
 }
 
-#quotes p { display: none;}
+#quotes p {
+    display: none;
+}
 
 footer {
     background: #0075b9ca;
