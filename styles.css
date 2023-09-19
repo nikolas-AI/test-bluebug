@@ -74,7 +74,6 @@ body {
         width: 60px;
         visibility: visible;
     }
-
 }
 
 @keyframes HTML {
@@ -175,17 +174,15 @@ nav ul li a.active {
     box-shadow: 2px 2px 2px 2px rgb(33, 32, 32);
 }
 
-#home,
-#about,
-#events,
-#contact {
-    min-height: 100vh;
-    width: 90%;
+#home {
+    padding-top: 50px;
 }
 
 #about,
 #events,
 #contact {
+    min-height: 100vh;
+    width: 90%;
     padding-top: 80px;
 }
 
@@ -201,7 +198,7 @@ nav ul li a.active {
     text-align: justify;
     margin: auto;
     margin-top: 20px;
-    width: 70%;
+    width: 80%;
 }
 
 span {
@@ -218,18 +215,17 @@ p {
 #home {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
+
 
 .carousel-item img {
     width: 70%;
     border-radius: 30px;
-}
-
-.carousel-inner img {
     padding: 10px;
     margin: auto;
-}
+    }
 
 .social-links img {
     height: 50px;
@@ -336,4 +332,35 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+    
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgContainer {
+        position: relative;
+    }
+    
+    #aboutImg1 img {
+        height: 200px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 2px 2px black;
+        margin: 0;
+        margin-top: 10px;
+        transform: rotate(10deg);
+    }
+    
+    #aboutImg2 img {
+        height: 200px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 2px 2px black;
+        margin: 0;
+        margin-top: 10px;
+    }
+    
 }
