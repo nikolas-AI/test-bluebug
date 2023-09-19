@@ -70,4 +70,8 @@ function contentRotator() {
 
 contentRotator();
 
+// Date for the footer
+var date = new Date()
+$('footer b').text(date.getFullYear())
+
 })();
