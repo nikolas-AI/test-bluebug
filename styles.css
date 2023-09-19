@@ -317,8 +317,8 @@ p {
     width: 400px;
     margin: 20px auto;
     padding: 20px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    /* border-radius: 50px; */
 }
 
 #quotes p {
