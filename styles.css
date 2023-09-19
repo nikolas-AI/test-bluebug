@@ -227,10 +227,6 @@ p {
     margin: auto;
     }
 
-.social-links img {
-    height: 50px;
-}
-
 #home {
     background: linear-gradient(40deg,
             rgba(11, 6, 99, 0.8968837535014006) 4%,
@@ -313,6 +309,10 @@ p {
     padding: 10px 0;
 }
 
+.social-links img {
+    height: 50px;
+}
+
 #quotes {
     width: 400px;
     margin: 20px auto;
@@ -332,6 +332,18 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    #aboutImg1 img {
+        height: 330px;
+    }
+    
+    #aboutImg2 img {
+        height: 330px;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -361,6 +373,10 @@ footer {
         box-shadow: 2px 2px 2px 2px black;
         margin: 0;
         margin-top: 10px;
+    }
+
+    .social-links img {
+        height: 40px;
     }
     
 }
