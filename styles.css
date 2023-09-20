@@ -1,4 +1,5 @@
 :root {
+    /* Light theme */
     --light-bg: #ffffff;
     --light-nav-bg: #0174b6c8;
     --light-bg-home: linear-gradient(40deg,
@@ -28,7 +29,7 @@
     
 
 
-    
+    /* Dark theme */
     --dark-bg: #010e31;
     --dark-nav-bg: #183748c8;
     --dark-bg-home: linear-gradient(40deg,
