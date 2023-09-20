@@ -1,3 +1,65 @@
+:root {
+    --light-bg: #ffffff;
+    --light-nav-bg: #0174b6c8;
+    --light-bg-home: linear-gradient(40deg,
+    #0b0663e5 4%,
+    #1010acc9 20%,
+    #0c7bb5cc 78%,
+    #05d5ffb8 99%);
+    --light-bg-about: linear-gradient(240deg,
+    #0b0663e5 4%,
+    #1010acc9 20%,
+    #0c7bb5cc 78%,
+    #05d5ffb8 99%);
+    --light-bg-events: linear-gradient(40deg,
+    #0b0663e5 4%,
+    #1010acc9 20%,
+    #0c7bb5cc 78%,
+    #05d5ffb8 99%);
+    --light-bg-contact: linear-gradient(240deg,
+    #0b0663e5 4%,
+    #1010acc9 20%,
+    #0c7bb5cc 78%,
+    #05d5ffb8 99%);
+    --light-color: #ffffff;
+    --light-hover-color: #000000;
+    --light-hover-active: #00b13b;
+    --light-hover-bg: #ffffff;
+    
+
+
+    
+    --dark-bg: #010e31;
+    --dark-nav-bg: #183748c8;
+    --dark-bg-home: linear-gradient(40deg,
+    #0a0654e5 4%,
+    #0b0b73c9 20%,
+    #0b6494cc 78%,
+    #025060b8 99%);
+    --dark-bg-about: linear-gradient(240deg,
+    #0a0654e5 4%,
+    #0b0b73c9 20%,
+    #0b6494cc 78%,
+    #025060b8 99%);
+    --dark-bg-events: linear-gradient(40deg,
+    #0a0654e5 4%,
+    #0b0b73c9 20%,
+    #0b6494cc 78%,
+    #025060b8 99%);
+    --dark-bg-contact: linear-gradient(240deg,
+    #0a0654e5 4%,
+    #0b0b73c9 20%,
+    #0b6494cc 78%,
+    #025060b8 99%);
+    --dark-color: #fff9f9;
+    --dark-hover-color: #000000;
+    --dark-hover-active: #00b13b;
+    --dark-hover-bg: #2bb5b5;
+
+}
+
+
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -114,7 +176,7 @@ body {
     background: #0174b6c8;
     backdrop-filter: blur(10px);
     /* background: linear-gradient(40deg, rgb(11,6,99) 4%, rgb(16,16,172) 20%, rgb(12,123,181) 78%, rgb(5,213,255) 99%); */
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 0;
     border-radius: 0 0 10px 10px;
@@ -150,12 +212,12 @@ nav ul>li>a {
 
 nav ul>li>a:hover {
     color: #252422;
-    background-color: rgb(253, 253, 253);
+    background-color: #fdfdfd;
 }
 
 nav ul>li>a:active {
-    color: rgb(0, 177, 59);
-    background-color: rgb(255, 255, 255);
+    color: #00b13b;
+    background-color: #ffffff;
 }
 
 /* Define styles for the 'active' class */
@@ -171,7 +233,7 @@ nav ul li a.active {
 .logo img {
     height: 50px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgb(33, 32, 32);
+    box-shadow: 2px 2px 2px 2px rgb(10, 10, 10);
 }
 
 #home {
@@ -225,7 +287,7 @@ p {
     border-radius: 30px;
     padding: 10px;
     margin: auto;
-    }
+}
 
 #home {
     background: linear-gradient(40deg,
@@ -335,11 +397,11 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-    
+
     #aboutImg1 img {
         height: 330px;
     }
-    
+
     #aboutImg2 img {
         height: 330px;
     }
@@ -347,17 +409,17 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-    
+
     #about {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .imgContainer {
         position: relative;
     }
-    
+
     #aboutImg1 img {
         height: 200px;
         border-radius: 30px;
@@ -366,7 +428,7 @@ footer {
         margin-top: 10px;
         transform: rotate(10deg);
     }
-    
+
     #aboutImg2 img {
         height: 200px;
         border-radius: 30px;
@@ -378,5 +440,5 @@ footer {
     .social-links img {
         height: 40px;
     }
-    
+
 }
