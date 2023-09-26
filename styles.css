@@ -189,6 +189,7 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -223,6 +224,7 @@ nav ul>li>a:active {
     background-color: var(--light-hover-bg);
 }
 
+
 /* Define styles for the 'active' class */
 nav ul li a.active {
     color: var(--light-hover-color);
@@ -237,6 +239,67 @@ nav ul li a.active {
     height: 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgb(10, 10, 10);
+}
+
+
+/* For toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #a3a3a4;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.toggle-slider {
+    background-color: #2196F3;
+}
+
+input:focus+.toggle-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.toggle-slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+.toggle-slider.round {
+    border-radius: 34px;
+}
+
+.toggle-slider:before {
+    border-radius: 50%;
 }
 
 #home {
@@ -363,7 +426,7 @@ p {
 }
 
 #quotes {
-    width: 400px;
+    /* width: 400px; */
     margin: 20px auto;
     padding: 20px;
     /* border: 2px solid rgb(255, 255, 255); */
