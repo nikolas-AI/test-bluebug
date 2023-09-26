@@ -74,4 +74,31 @@ contentRotator();
 var date = new Date()
 $('footer b').text(date.getFullYear())
 
+
+// Toggle button
+const root_theme = document.querySelector(':root');
+const root_btn = document.querySelector('#toggle');
+const class_list = document.querySelector('#toggle').classList;
+
+
+root_btn.addEventListener('change', () => {
+
+    if (class_list[0] == 'day') {
+        root_btn.classList.remove('day');
+        root_btn.classList.add('night');
+        root_btn.innerText = 'Night'
+        root_theme.style.setProperty('--light-bg', 'black');
+
+    }
+
+    else {
+        root_btn.classList.remove('night');
+        root_btn.classList.add('day');
+        root_btn.innerText = 'Day'
+
+        root_theme.style.setProperty('--light-bg', '#ffffff');
+
+    }
+});
+
 })();
