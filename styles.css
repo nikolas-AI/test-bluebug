@@ -417,7 +417,7 @@ p {
     justify-content: space-around;
     width: 40%;
     margin: auto;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     padding: 10px 0;
 }
 
@@ -426,9 +426,8 @@ p {
 }
 
 #quotes {
-    /* width: 400px; */
-    margin: 20px auto;
-    padding: 20px;
+    margin-top: 25%;
+
     /* border: 2px solid rgb(255, 255, 255); */
     /* border-radius: 50px; */
 }
@@ -443,6 +442,10 @@ footer {
     color:var(--light-color);
     text-align: center;
     padding: 10px;
+    font-size: 14px;
+}
+
+footer b {
     font-size: 14px;
 }
 
