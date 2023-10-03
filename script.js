@@ -79,7 +79,8 @@
     const root_theme = document.querySelector(':root');
     const root_btn = document.querySelector('#toggle');
     const class_list = document.querySelector('#toggle').classList;
-
+    const images = document.querySelectorAll('.social-links img');
+console.log(images)
 
     root_btn.addEventListener('change', () => {
 
@@ -98,8 +99,12 @@
             root_theme.style.setProperty('--hover-color', '#ffffff');
             root_theme.style.setProperty('--hover-active', '#0a0a0a');
             root_theme.style.setProperty('--hover-bg', '#2bb5b5');
-        }
 
+            for (let i = 0; i < images.length; i++) {
+                images[i].style.setProperty('filter', 'invert(100%)')
+            }
+        }
+        
         else {
             root_btn.classList.remove('night');
             root_btn.classList.add('day');
@@ -116,7 +121,11 @@
             root_theme.style.setProperty('--hover-color', '#000000');
             root_theme.style.setProperty('--hover-active', '#00b13b');
             root_theme.style.setProperty('--hover-bg', '#ffffff');
+            
+            for (let i = 0; i < images.length; i++) {
+                images[i].style.setProperty('filter', 'invert(0%)')
+            }
         }
     });
-
+    
 })();
