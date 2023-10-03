@@ -3,59 +3,90 @@
     --light-bg: #ffffff;
     --light-nav-bg: #0174b6c8;
     --light-bg-home: linear-gradient(40deg,
-    #0b0663e5 4%,
-    #1010acc9 20%,
-    #0c7bb5cc 78%,
-    #05d5ffb8 99%);
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
     --light-bg-about: linear-gradient(240deg,
-    #0b0663e5 4%,
-    #1010acc9 20%,
-    #0c7bb5cc 78%,
-    #05d5ffb8 99%);
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
     --light-bg-events: linear-gradient(40deg,
-    #0b0663e5 4%,
-    #1010acc9 20%,
-    #0c7bb5cc 78%,
-    #05d5ffb8 99%);
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
     --light-bg-contact: linear-gradient(240deg,
-    #0b0663e5 4%,
-    #1010acc9 20%,
-    #0c7bb5cc 78%,
-    #05d5ffb8 99%);
+            #0b0663e5 4%,
+            #212179c9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
     --light-color: #ffffff;
-    --light-hover-color: #0a0a0a;
+    --light-hover-color: #000000;
     --light-hover-active: #00b13b;
     --light-hover-bg: #ffffff;
-    
+
 
 
     /* Dark theme */
-    --dark-bg: #010e31;
-    --dark-nav-bg: #183748c8;
+    --dark-bg: #010a21;
+    --dark-nav-bg: #091352f2;
     --dark-bg-home: linear-gradient(40deg,
-    #0a0654e5 4%,
-    #0b0b73c9 20%,
-    #0b6494cc 78%,
-    #025060b8 99%);
+            #03012ae5 4%,
+            #000072c9 20%,
+            #00447cdd 78%,
+            #002931e1 99%);
     --dark-bg-about: linear-gradient(240deg,
-    #0a0654e5 4%,
-    #0b0b73c9 20%,
-    #0b6494cc 78%,
-    #025060b8 99%);
+            #03012ae5 4%,
+            #000072c9 20%,
+            #00447cdd 78%,
+            #002931e1 99%);
     --dark-bg-events: linear-gradient(40deg,
-    #0a0654e5 4%,
-    #0b0b73c9 20%,
-    #0b6494cc 78%,
-    #025060b8 99%);
+            #03012ae5 4%,
+            #000072c9 20%,
+            #00447cdd 78%,
+            #002931e1 99%);
     --dark-bg-contact: linear-gradient(240deg,
-    #0a0654e5 4%,
-    #0b0b73c9 20%,
-    #0b6494cc 78%,
-    #025060b8 99%);
+            #03012ae5 4%,
+            #000072c9 20%,
+            #00447cdd 78%,
+            #002931e1 99%);
     --dark-color: #fff9f9;
-    --dark-hover-color: #000000;
-    --dark-hover-active: #050505;
+    --dark-hover-color: #ffffff;
+    --dark-hover-active: #0a0a0a;
     --dark-hover-bg: #2bb5b5;
+    
+
+    /* Dark theme */
+    --bg: #ffffff;
+    --nav-bg: #0174b6c8;
+    --bg-home: linear-gradient(40deg,
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
+    --bg-about: linear-gradient(240deg,
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
+    --bg-events: linear-gradient(40deg,
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
+    --bg-contact: linear-gradient(240deg,
+            #0b0663e5 4%,
+            #212179c9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
+    --color: #ffffff;
+    --txt-color: #000000;
+    --hover-color: #000000;
+    --hover-active: #00b13b;
+    --hover-bg: #ffffff;
+
 
 }
 
@@ -64,13 +95,13 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background: var(--light-bg);
+    background: var(--bg);
 }
 
 * {
     margin: 0;
     padding: 0;
-    color: var(--light-color);
+    color: var(--color);
 }
 
 body {
@@ -81,10 +112,10 @@ body {
 }
 
 
-#doc {
+/* #doc {
     animation: openingAnimationDoc 4s ease-out;
     display: block;
-}
+} */
 
 #animation img {
     position: absolute;
@@ -167,19 +198,19 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 45px;
-    background: var(--light-bg);
+    background: var(--bg);
 }
 
 #header {
     position: fixed;
     top: 0px;
     width: 100%;
-    height: 60px;
+    height: 55px;
     z-index: 2;
-    background: var(--light-nav-bg);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
     /* background: linear-gradient(40deg, rgb(11,6,99) 4%, rgb(16,16,172) 20%, rgb(12,123,181) 78%, rgb(5,213,255) 99%); */
-    color: var(--light-color);
+    color: var(--color);
     text-align: center;
     padding: 0;
     border-radius: 0 0 10px 10px;
@@ -192,43 +223,43 @@ nav {
     align-items: center;
 }
 
-nav .navicon {
+nav ul {
     list-style: none;
-    margin-top: 12px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 nav ul li {
-    margin-right: 10px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav ul>li>a {
     text-decoration: none;
-    color: var(--light-color);
+    color: var(--color);
     transition: color 0.3s;
     font-size: 20px;
-    padding: 2px 7px 2px 7px;
+    padding: 0 7px 5px 7px;
     border-radius: 15px;
     transition: all 0.3s;
 }
 
 nav ul>li>a:hover {
-    color: var(--light-hover-color);
-    background-color: var(--light-hover-bg);
+    color: var(--hover-color);
+    background-color: var(--hover-bg);
 }
 
 nav ul>li>a:active {
-    color: var(--light-hover-active);
-    background-color: var(--light-hover-bg);
+    color: var(--hover-active);
+    background-color: var(--hover-bg);
 }
 
 
 /* Define styles for the 'active' class */
 nav ul li a.active {
-    color: var(--light-hover-color);
-    background-color: var(--light-hover-bg);
+    color: var(--txt-color);
+    background-color: var(--hover-bg);
 }
 
 .logo {
@@ -274,7 +305,7 @@ nav ul li a.active {
     height: 18px;
     width: 18px;
     left: 4px;
-    bottom: 3.5px;
+    bottom: 4px;
     background-color: #ffffff;
     -webkit-transition: .4s;
     transition: .4s;
@@ -289,9 +320,9 @@ input:focus+.toggle-slider {
 }
 
 input:checked+.toggle-slider:before {
-    -webkit-transform: translateX(22.5px);
-    -ms-transform: translateX(22.5px);
-    transform: translateX(22.5px);
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
 }
 
 .toggle-slider.round {
@@ -304,11 +335,6 @@ input:checked+.toggle-slider:before {
 
 #home {
     padding-top: 50px;
-}
-
-.intro{
-    font-size: 20px;
-    text-align: center;
 }
 
 #about,
@@ -334,16 +360,15 @@ input:checked+.toggle-slider:before {
     width: 80%;
 }
 
-.info span{
+span {
     font-size: 20px;
-    text-align: center;
 }
 
 p {
     text-align: center;
     font-size: 18px;
     line-height: 1.5;
-    color: var(--light-color);
+    color: var(--color);
 }
 
 #home {
@@ -353,9 +378,6 @@ p {
     justify-content: space-around;
 }
 
-.intro {
-    text-align: center;
-}
 
 .carousel-item img {
     width: 70%;
@@ -365,11 +387,11 @@ p {
 }
 
 #home {
-    background: var(--light-bg-home);
+    background: var(--bg-home);
 }
 
 #about {
-    background: var(--light-bg-about);
+    background: var(--bg-about);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -400,12 +422,12 @@ p {
 
 
 #events {
-    background: var(--light-bg-events);
+    background: var(--bg-events);
     padding-bottom: 50px;
 }
 
 #contact {
-    background: var(--light-bg-contact);
+    background: var(--bg-contact);
 }
 
 #contact p {
@@ -436,7 +458,7 @@ p {
 
 #quotes {
     margin-top: 25%;
-
+    
     /* border: 2px solid rgb(255, 255, 255); */
     /* border-radius: 50px; */
 }
@@ -446,9 +468,9 @@ p {
 }
 
 footer {
-    background: var(--light-nav-bg);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
-    color:var(--light-color);
+    color: var(--color);
     text-align: center;
     padding: 10px;
     font-size: 14px;
@@ -502,67 +524,5 @@ footer b {
     .social-links img {
         height: 40px;
     }
-
-}
-
-@media screen and (max-width: 800px) {
-
-    h1 {
-        font-size: 30px !important;
-    }
-
-    p, .intro>span, .info>span {
-        font-size: 15px;
-    }
-
-    #header {
-        height: 50px;
-    }
-
-    .logo img {
-        margin: 0px;
-        height: 40px;
-        box-shadow: 1px 1px 1px 1px black;
-    }
-
-    nav {
-        height: 50px;
-    }
-
-    nav .navicon {
-        display: flex;
-        align-items: center;
-    }
-
-    nav > ul > li > a {
-        font-size: 15px;
-    }
-
-    .switch {
-        width: 40px;
-        height: 20px;
-    }
-    
-    .toggle-slider:before {
-        height: 15px;
-        width: 15px;
-        left: 2px;
-        bottom: 2.5px;
-    }
-
-    input:checked+.toggle-slider:before {
-        -webkit-transform: translateX(20px);
-        -ms-transform: translateX(20px);
-        transform: translateX(20px);
-    }
-    
-    .toggle-slider.round {
-        border-radius: 34px;
-    }
-
-    .social-links img {
-        height: 30px;
-    }
-    
 
 }
