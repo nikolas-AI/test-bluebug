@@ -57,6 +57,35 @@
     --dark-hover-active: #050505;
     --dark-hover-bg: #2bb5b5;
 
+    /* Theme */
+    --bg: #ffffff;
+    --nav-bg: #0174b6c8;
+    --bg-home: linear-gradient(40deg,
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
+    --bg-about: linear-gradient(240deg,
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
+    --bg-events: linear-gradient(40deg,
+            #0b0663e5 4%,
+            #1010acc9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
+    --bg-contact: linear-gradient(240deg,
+            #0b0663e5 4%,
+            #212179c9 20%,
+            #0c7bb5cc 78%,
+            #05d5ffb8 99%);
+    --color: #ffffff;
+    --txt-color: #000000;
+    --hover-color: #000000;
+    --hover-active: #00b13b;
+    --hover-bg: #ffffff;
+
 }
 
 
