@@ -256,7 +256,7 @@ nav ul>li>a:active {
 
 /* Define styles for the 'active' class */
 nav ul li a.active {
-    color: var(--hover-color);
+    color: var(--txt-color);
     background-color: var(--hover-bg);
 }
 
