@@ -33,7 +33,7 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border-width: 3px;
+    /* border-width: 3px; */
     border-radius: 10px;
 }
 
@@ -41,7 +41,7 @@ textarea {
     color: black;
     width: 100%;
     padding: 10px;
-    border-width: 3px;
+    border: none;
     border-radius: 10px;
 }
 
